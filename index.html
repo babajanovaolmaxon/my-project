@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Mini Dasturlarim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Musbat yoki Manfiy?</h2>
+        <p>Son kiriting:</p>
+        <input type="number" id="sonTuriInput" placeholder="Masalan: -5">
+        <button onclick="aniqlaSonTuri()">Aniqlash</button>
+        <div id="sonTuriNatija" class="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Imtihon Natijasi</h2>
+        <p>Ballni kiriting (0-100):</p>
+        <input type="number" id="ballInput" placeholder="Masalan: 75">
+        <button onclick="tekshirImtihon()">Natija</button>
+        <div id="imtihonNatija" class="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Kabisa Yili</h2>
+        <p>Yilni kiriting:</p>
+        <input type="number" id="yilInput" placeholder="Masalan: 2024">
+        <button onclick="tekshirYil()">Tekshirish</button>
+        <div id="yilNatija" class="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Yosh Cheklovi</h2>
+        <p>Yoshingizni kiriting:</p>
+        <input type="number" id="yoshInput" placeholder="Masalan: 18">
+        <button onclick="tekshirYosh()">Tekshirish</button>
+        <div id="yoshNatija" class="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Ob-havo maslahatchisi</h2>
+        <p>Haroratni kiriting (°C):</p>
+        <input type="number" id="haroratInput" placeholder="Masalan: 28">
+        <button onclick="tavsiyaBer()">Tavsiya olish</button>
+        <div id="haroratNatija" class="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
