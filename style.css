@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap; /* Kartalar ko'payganda pastga chiroyli tushishi uchun */
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #5a67d8;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    display: none; /* Boshida berkitilgan bo'ladi */
+}
+
+/* Natija ranglari */
+.juft {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.toq {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
